@@ -1,0 +1,350 @@
+[gd_scene load_steps=22 format=3 uid="uid://b4e3j7wrple5g"]
+
+[ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/player.tscn" id="1_6slsl"]
+[ext_resource type="Texture2D" uid="uid://ceorsd708bbqe" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Tileset/Summer - simplified.png" id="2_owon1"]
+[ext_resource type="Texture2D" uid="uid://rf8qgw3dpb2e" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Bush.png" id="3_k3tar"]
+[ext_resource type="Texture2D" uid="uid://56sx2j2rlk0n" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Flower.png" id="4_hyijl"]
+[ext_resource type="Texture2D" uid="uid://bcjgkov3fhsmw" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Grass.png" id="5_k85os"]
+[ext_resource type="Texture2D" uid="uid://cblgrseikox5j" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Props-All.png" id="6_2hnjy"]
+[ext_resource type="Texture2D" uid="uid://boq30hx6ueri4" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Stone and Rock.png" id="7_6q8uv"]
+[ext_resource type="Texture2D" uid="uid://dy8adr8unr15" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Texture.png" id="8_dtxdr"]
+[ext_resource type="Texture2D" uid="uid://dbbgn4glxk86v" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Tree.png" id="9_6uenv"]
+[ext_resource type="Texture2D" uid="uid://wftv6innc1u" path="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Water Plants.png" id="10_dbcuv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bv8sn"]
+texture = ExtResource("2_owon1")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w4s7l"]
+texture = ExtResource("3_k3tar")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d26ry"]
+texture = ExtResource("4_hyijl")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dfy8g"]
+texture = ExtResource("5_k85os")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vgoda"]
+texture = ExtResource("6_2hnjy")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+0:1/0 = 0
+3:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_576at"]
+texture = ExtResource("7_6q8uv")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qxf5j"]
+texture = ExtResource("8_dtxdr")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ir6u"]
+texture = ExtResource("9_6uenv")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_il81p"]
+texture = ExtResource("10_dbcuv")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bv162"]
+sources/0 = SubResource("TileSetAtlasSource_bv8sn")
+sources/1 = SubResource("TileSetAtlasSource_w4s7l")
+sources/2 = SubResource("TileSetAtlasSource_d26ry")
+sources/3 = SubResource("TileSetAtlasSource_dfy8g")
+sources/4 = SubResource("TileSetAtlasSource_vgoda")
+sources/5 = SubResource("TileSetAtlasSource_576at")
+sources/6 = SubResource("TileSetAtlasSource_qxf5j")
+sources/7 = SubResource("TileSetAtlasSource_3ir6u")
+sources/8 = SubResource("TileSetAtlasSource_il81p")
+
+[sub_resource type="TileSet" id="TileSet_alad7"]
+
+[node name="main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(482, 205)
+zoom = Vector2(0.8, 0.8)
+
+[node name="player" parent="." instance=ExtResource("1_6slsl")]
+position = Vector2(482, 205)
+
+[node name="tilemap" type="Node" parent="."]
+
+[node name="base" type="TileMapLayer" parent="tilemap"]
+tile_set = SubResource("TileSet_bv162")
+
+[node name="water" type="TileMapLayer" parent="tilemap"]
+tile_set = SubResource("TileSet_alad7")

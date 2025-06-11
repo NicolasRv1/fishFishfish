@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5qh6a7e1qgo4"]
+
+[ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/player.tscn" id="1_cvwma"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_cvwma")]
+position = Vector2(390, 291)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.8, 0.8)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r44t2pyradrd"
-path="res://.godot/imported/Fall - simplified.png-a2c4c26237e6c033969d4e669681e763.ctex"
+uid="uid://b2tc36a5kcwes"
+path="res://.godot/imported/forest_demo_terrain.png-fe65f4ac8174873eb692f47a24b41ef9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Tileset/Fall - simplified.png"
-dest_files=["res://.godot/imported/Fall - simplified.png-a2c4c26237e6c033969d4e669681e763.ctex"]
+source_file="res://fishFishfish/assets/Pixel Lands Forest Demo/Pixel Lands Forest Demo/forest_demo_terrain.png"
+dest_files=["res://.godot/imported/forest_demo_terrain.png-fe65f4ac8174873eb692f47a24b41ef9.ctex"]
 
 [params]
 

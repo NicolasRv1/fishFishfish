@@ -7,7 +7,7 @@ var running = false
 var speed := 0.0
 
 var locked = false
-var fishing = false
+var fishing := false
 
 @onready 
 var animations: AnimatedSprite2D = $AnimatedSprite2D
@@ -15,10 +15,13 @@ var animations: AnimatedSprite2D = $AnimatedSprite2D
 @onready 
 var fish_time: Timer = $fishing
 
+@onready 
+var action_point: Node2D = $action_point
+var canFish = false
 
 func _physics_process(delta: float) -> void:
 	
-	if Input.is_action_just_pressed("fish") and !locked:
+	if Input.is_action_just_pressed("fish") and !locked and canFish:
 		match animations.animation:
 			"walkUp", "runUp", "idleUp": animations.animation = "fishUp"
 			"walk", "run", "idle": animations.animation = "fish"
@@ -48,6 +51,7 @@ func _physics_process(delta: float) -> void:
 
 	input_vector = input_vector.normalized()
 	
+	
 	velocity = input_vector * speed
 	
 	if !locked:
@@ -75,32 +79,58 @@ func update_animations(input_vector: Vector2) -> void:
 				if input_vector.x > 0:
 					animations.flip_h = false
 					animations.animation = "runRight"
+					action_point.position = Vector2 (57.0, 0)
 				else:
 					animations.flip_h = true
 					animations.animation = "runRight"
+					action_point.position = Vector2 (-57.0, 0)
 			else:
 				if input_vector.x > 0:
 					animations.flip_h = false
 					animations.animation = "walkRight"
+					action_point.position = Vector2 (57.0, 0)
 				else:
 					animations.flip_h = true
 					animations.animation = "walkRight"
+					action_point.position = Vector2 (-57.0, 0)
 
 		
 		else:
 			if running:
 				if input_vector.y > 0:
 					animations.animation = "run"
+					action_point.position = action_point.position
 				else:
 					animations.animation = "runUp"
+					action_point.position = Vector2(0.0, -57.0)
 			else:
 				if input_vector.y > 0:
 					animations.animation = "walk"
+					action_point.position = Vector2(0.0, 57.0)
 				else:
 					animations.animation = "walkUp"
+					action_point.position = Vector2(0.0, -57.0)
 
 
 func _on_fishing_timeout() -> void:
 	locked = false
 	print("FISHED!")
 	fishing = false
+	
+	match animations.animation:
+		"fishUp" : animations.animation = "idleUp"
+		"fish" : animations.animation = "idle"
+		"fishRight" : animations.animation = "idleRight"
+
+
+
+
+
+
+
+func _on_action_finder_body_entered(body: Node2D) -> void:
+	canFish = true
+
+
+func _on_action_finder_body_exited(body: Node2D) -> void:
+	canFish = false

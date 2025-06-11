@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxr2n1iejmx4x"
-path="res://.godot/imported/Winter - simplified.png-3524196a4376fdf9c5c450fe30735fa4.ctex"
+uid="uid://hfkhbo4jo841"
+path="res://.godot/imported/forest_demo_objects.png-69bd232e9a6516fd8fd877b9ecec5c89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Tileset/Winter - simplified.png"
-dest_files=["res://.godot/imported/Winter - simplified.png-3524196a4376fdf9c5c450fe30735fa4.ctex"]
+source_file="res://fishFishfish/assets/Pixel Lands Forest Demo/Pixel Lands Forest Demo/forest_demo_objects.png"
+dest_files=["res://.godot/imported/forest_demo_objects.png-69bd232e9a6516fd8fd877b9ecec5c89.ctex"]
 
 [params]
 

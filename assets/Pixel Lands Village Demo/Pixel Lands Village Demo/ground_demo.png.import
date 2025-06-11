@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rf8qgw3dpb2e"
-path="res://.godot/imported/Bush.png-3d27f7c98ddc67dc166d7e23f7faefdc.ctex"
+uid="uid://b4jx3nsrgp064"
+path="res://.godot/imported/ground_demo.png-60be9bea12760804ad5dc8ce10b6a715.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Bush.png"
-dest_files=["res://.godot/imported/Bush.png-3d27f7c98ddc67dc166d7e23f7faefdc.ctex"]
+source_file="res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/ground_demo.png"
+dest_files=["res://.godot/imported/ground_demo.png-60be9bea12760804ad5dc8ce10b6a715.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boq30hx6ueri4"
-path="res://.godot/imported/Stone and Rock.png-c102e092c1d43b00d575745c45a727c1.ctex"
+uid="uid://dao11f4hkh47t"
+path="res://.godot/imported/objects_demo.png-692a5a586012670c392a7e1e8756be23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Stone and Rock.png"
-dest_files=["res://.godot/imported/Stone and Rock.png-c102e092c1d43b00d575745c45a727c1.ctex"]
+source_file="res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/objects_demo.png"
+dest_files=["res://.godot/imported/objects_demo.png-692a5a586012670c392a7e1e8756be23.ctex"]
 
 [params]
 

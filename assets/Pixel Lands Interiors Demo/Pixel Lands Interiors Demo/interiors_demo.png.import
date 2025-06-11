@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy8adr8unr15"
-path="res://.godot/imported/Texture.png-5095885ebef6d6ec2e1acdfeb7790649.ctex"
+uid="uid://be83dm8gul8lm"
+path="res://.godot/imported/interiors_demo.png-3512fc86d3c275bbc892a81bc46f73ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Texture.png"
-dest_files=["res://.godot/imported/Texture.png-5095885ebef6d6ec2e1acdfeb7790649.ctex"]
+source_file="res://fishFishfish/assets/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/interiors_demo.png"
+dest_files=["res://.godot/imported/interiors_demo.png-3512fc86d3c275bbc892a81bc46f73ce.ctex"]
 
 [params]
 

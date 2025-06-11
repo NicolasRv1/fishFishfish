@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcjgkov3fhsmw"
-path="res://.godot/imported/Grass.png-811f82f81f27b4d50b44e758106cebf3.ctex"
+uid="uid://c2lv1lwfitwyo"
+path="res://.godot/imported/premade_buildings_demo.png-8a223293bb955bbbb1960b17e8c50071.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fishFishfish/assets/Hana Caraka - Topdown Tileset [sample]/Props/Grass.png"
-dest_files=["res://.godot/imported/Grass.png-811f82f81f27b4d50b44e758106cebf3.ctex"]
+source_file="res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/premade_buildings_demo.png"
+dest_files=["res://.godot/imported/premade_buildings_demo.png-8a223293bb955bbbb1960b17e8c50071.ctex"]
 
 [params]
 

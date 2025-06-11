@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=3 uid="uid://6hkj1cpvlm5l"]
+[gd_scene load_steps=75 format=3 uid="uid://6hkj1cpvlm5l"]
 
 [ext_resource type="Texture2D" uid="uid://kx5jgavwth28" path="res://fishFishfish/assets/Hana Caraka - Base Character [sample]/idle.png" id="1_51jx6"]
 [ext_resource type="Script" uid="uid://e2xmugqbari8" path="res://fishFishfish/scripts/player.gd" id="1_appya"]
@@ -534,7 +534,11 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_3oxkk"]
 radius = 20.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ipoat"]
+radius = 17.0
+
 [node name="player" type="CharacterBody2D"]
+collision_layer = 62
 script = ExtResource("1_appya")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -546,10 +550,22 @@ frame = 1
 frame_progress = 0.564828
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 22)
+position = Vector2(0, 15)
 shape = SubResource("CircleShape2D_3oxkk")
 
 [node name="fishing" type="Timer" parent="."]
 wait_time = 15.0
 
+[node name="action_point" type="Node2D" parent="."]
+position = Vector2(0, 57)
+
+[node name="action_finder" type="Area2D" parent="action_point"]
+collision_layer = 34
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="action_point/action_finder"]
+shape = SubResource("CircleShape2D_ipoat")
+
 [connection signal="timeout" from="fishing" to="." method="_on_fishing_timeout"]
+[connection signal="body_entered" from="action_point/action_finder" to="." method="_on_action_finder_body_entered"]
+[connection signal="body_exited" from="action_point/action_finder" to="." method="_on_action_finder_body_exited"]

@@ -1,0 +1,38 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1749692807
+icon.svg::CompressedTexture2D/CompressedTexture2D::1115767170318895796::1749492822::1749492829::1::::<><><>0<>0<>bd46efbb2304f5fd6a6aeead6f3c4080<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://fishFishfish/::1749493013
+::res://fishFishfish/assets/::1749677223
+::res://fishFishfish/assets/Hana Caraka - Base Character [sample]/::1749492996
+color palette.png::CompressedTexture2D/CompressedTexture2D::160135772703936568::1749492996::1749492996::1::::<><><>0<>0<>6e90c6fea6c8bd866da7ccaace05aed3<>res://.godot/imported/color palette.png-765024f2958353a5bedfa67a5ebed1ef.ctex::
+death.png::CompressedTexture2D/CompressedTexture2D::8962586682475269517::1749492996::1749492996::1::::<><><>0<>0<>df4c1fab74f023fc635b12e06d18d070<>res://.godot/imported/death.png-9530fb85d67f85b039f8e82ee664a726.ctex::
+hurt.png::CompressedTexture2D/CompressedTexture2D::4432576445658980621::1749492996::1749492996::1::::<><><>0<>0<>9cf6d652b2edbd25815e48310b1ace6d<>res://.godot/imported/hurt.png-424986ff3789b6dd29a9190f5bd912a6.ctex::
+idle.png::CompressedTexture2D/CompressedTexture2D::751207022776236651::1749492996::1749492996::1::::<><><>0<>0<>79f518a0a341e3b004e77beae4395bad<>res://.godot/imported/idle.png-b401ca705a6662cfd7a2474e65aed734.ctex::
+jump.png::CompressedTexture2D/CompressedTexture2D::4303024950279512345::1749492996::1749492996::1::::<><><>0<>0<>b048288a8d068275d417b3e055ba63b7<>res://.godot/imported/jump.png-35b9b5ea92867740aa76d62f7f609115.ctex::
+Read Me.txt::TextFile/TextFile::-1::1749492996::0::1::::<><><>0<>0<><>::
+run.png::CompressedTexture2D/CompressedTexture2D::2205200096241078416::1749492996::1749492996::1::::<><><>0<>0<>51a0d640c257c98a9861a2efb9f60d92<>res://.godot/imported/run.png-9962a4f6d39196ac62d602cd72bafda5.ctex::
+walk.png::CompressedTexture2D/CompressedTexture2D::712875290138578373::1749492996::1749492996::1::::<><><>0<>0<>8bfa7545fb132e8e580111187a01619c<>res://.godot/imported/walk.png-69b12a51d95628d439880fbf149f0501.ctex::
+::res://fishFishfish/assets/Pixel Lands Forest Demo/::1749664589
+::res://fishFishfish/assets/Pixel Lands Forest Demo/Pixel Lands Forest Demo/::1749664590
+forest_demo_objects.png::CompressedTexture2D/CompressedTexture2D::502263540202380184::1749664589::1749664590::1::::<><><>0<>0<>adaf9a4f7e0df3eb7874fd8a8ec8d3ca<>res://.godot/imported/forest_demo_objects.png-69bd232e9a6516fd8fd877b9ecec5c89.ctex::
+forest_demo_terrain.png::CompressedTexture2D/CompressedTexture2D::4320915705062365922::1749664589::1749664590::1::::<><><>0<>0<>8c98f272e64805564cdde2866378cf1c<>res://.godot/imported/forest_demo_terrain.png-fe65f4ac8174873eb692f47a24b41ef9.ctex::
+::res://fishFishfish/assets/Pixel Lands Interiors Demo/::1749664589
+::res://fishFishfish/assets/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/::1749664590
+INFO.txt::TextFile/TextFile::-1::1749664589::0::1::::<><><>0<>0<><>::
+interiors_demo.png::CompressedTexture2D/CompressedTexture2D::2737006638866936478::1749664589::1749664590::1::::<><><>0<>0<>44fa6fa6e6f49800a769f410f07c96d7<>res://.godot/imported/interiors_demo.png-3512fc86d3c275bbc892a81bc46f73ce.ctex::
+::res://fishFishfish/assets/Pixel Lands Village Demo/::1749664589
+::res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/::1749664590
+ground_demo.png::CompressedTexture2D/CompressedTexture2D::4441923753436615063::1749664589::1749664590::1::::<><><>0<>0<>518c3d0eb3d40d9706be31a28e89417b<>res://.godot/imported/ground_demo.png-60be9bea12760804ad5dc8ce10b6a715.ctex::
+INFO.txt::TextFile/TextFile::-1::1749664589::0::1::::<><><>0<>0<><>::
+objects_demo.png::CompressedTexture2D/CompressedTexture2D::7189788719837395263::1749664589::1749664590::1::::<><><>0<>0<>00ad48ed5abc0c0bf15b0543742e0f3f<>res://.godot/imported/objects_demo.png-692a5a586012670c392a7e1e8756be23.ctex::
+premade_buildings_demo.png::CompressedTexture2D/CompressedTexture2D::6691970400378546638::1749664589::1749664590::1::::<><><>0<>0<>5999351fe7a2faf2b141aab6986a17a3<>res://.godot/imported/premade_buildings_demo.png-8a223293bb955bbbb1960b17e8c50071.ctex::
+walls_roofs_doors_demo.png::CompressedTexture2D/CompressedTexture2D::6531359961807052978::1749664589::1749664590::1::::<><><>0<>0<>f14ed357c023dc6cf171361eb12da9ae<>res://.godot/imported/walls_roofs_doors_demo.png-59ef15588edef0645071a6bbd90f6e4b.ctex::
+::res://fishFishfish/assets/sounds/::1749677223
+::res://fishFishfish/scenes/::1749692717
+door.tscn::PackedScene::1775625618266744466::1749692717::0::1::::<><><>0<>0<><>::uid://7g0jleb8ldwe::::res://fishFishfish/scripts/door.gd
+insideHut.tscn::PackedScene::6912017148803411121::1749692717::0::1::::<><><>0<>0<><>::uid://6hkj1cpvlm5l::::res://fishFishfish/scenes/player.tscn
+main.tscn::PackedScene::4431872523680671354::1749692717::0::1::::<><><>0<>0<><>::uid://6hkj1cpvlm5l::::res://fishFishfish/scenes/player.tscn<>uid://b2tc36a5kcwes::::res://fishFishfish/assets/Pixel Lands Forest Demo/Pixel Lands Forest Demo/forest_demo_terrain.png<>uid://c2lv1lwfitwyo::::res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/premade_buildings_demo.png<>uid://dao11f4hkh47t::::res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/objects_demo.png<>uid://0kekappix07w::::res://fishFishfish/scenes/door.tscn
+player.tscn::PackedScene::2190929408536985279::1749692717::0::1::::<><><>0<>0<><>::uid://kx5jgavwth28::::res://fishFishfish/assets/Hana Caraka - Base Character [sample]/idle.png<>uid://e2xmugqbari8::::res://fishFishfish/scripts/player.gd<>uid://6ohk8373ka5e::::res://fishFishfish/assets/Hana Caraka - Base Character [sample]/run.png<>uid://b2kogsiik5nn2::::res://fishFishfish/assets/Hana Caraka - Base Character [sample]/jump.png<>uid://kfk7mmsox0lt::::res://fishFishfish/assets/Hana Caraka - Base Character [sample]/walk.png
+::res://fishFishfish/scripts/::1749677706
+door.gd::GDScript/GDScript::2259963843931740932::1749677706::0::1::::<>Area2D<><>0<>0<><>::
+player.gd::GDScript/GDScript::337912554736383365::1749677678::0::1::::Player<>CharacterBody2D<><>0<>0<><>::

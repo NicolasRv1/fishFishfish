@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=4 uid="uid://c5qh6a7e1qgo4"]
+[gd_scene load_steps=10 format=4 uid="uid://c5qh6a7e1qgo4"]
 
 [ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/player.tscn" id="1_cvwma"]
+[ext_resource type="Script" uid="uid://bmf01h7jw4b7t" path="res://fishFishfish/scripts/hut.gd" id="1_rtkhk"]
 [ext_resource type="Texture2D" uid="uid://be83dm8gul8lm" path="res://fishFishfish/assets/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/interiors_demo.png" id="2_em5da"]
 [ext_resource type="PackedScene" uid="uid://0kekappix07w" path="res://fishFishfish/scenes/door.tscn" id="3_wk1x3"]
 
@@ -548,9 +549,10 @@ sources/0 = SubResource("TileSetAtlasSource_em5da")
 size = Vector2(341, 263.5)
 
 [node name="hut" type="Node2D"]
+script = ExtResource("1_rtkhk")
 
 [node name="player" parent="." instance=ExtResource("1_cvwma")]
-position = Vector2(390, 291)
+position = Vector2(410, 377)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.8, 0.8)

@@ -9,6 +9,7 @@ var speed := 0.0
 var locked = false
 var fishing := false
 
+
 @onready 
 var animations: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -20,6 +21,9 @@ var action_point: Node2D = $action_point
 var canFish = false
 
 func _physics_process(delta: float) -> void:
+	
+	if Global.current_scene != "island":
+		animations.animation = "idleUp"
 	
 	if Input.is_action_just_pressed("fish") and !locked and canFish:
 		match animations.animation:
@@ -80,19 +84,23 @@ func update_animations(input_vector: Vector2) -> void:
 					animations.flip_h = false
 					animations.animation = "runRight"
 					action_point.position = Vector2 (57.0, 0)
+					Global.game_1st_loading = false
 				else:
 					animations.flip_h = true
 					animations.animation = "runRight"
 					action_point.position = Vector2 (-57.0, 0)
+					Global.game_1st_loading = false
 			else:
 				if input_vector.x > 0:
 					animations.flip_h = false
 					animations.animation = "walkRight"
 					action_point.position = Vector2 (57.0, 0)
+					Global.game_1st_loading = false
 				else:
 					animations.flip_h = true
 					animations.animation = "walkRight"
 					action_point.position = Vector2 (-57.0, 0)
+					Global.game_1st_loading = false
 
 		
 		else:
@@ -100,16 +108,20 @@ func update_animations(input_vector: Vector2) -> void:
 				if input_vector.y > 0:
 					animations.animation = "run"
 					action_point.position = action_point.position
+					Global.game_1st_loading = false
 				else:
 					animations.animation = "runUp"
 					action_point.position = Vector2(0.0, -57.0)
+					Global.game_1st_loading = false
 			else:
 				if input_vector.y > 0:
 					animations.animation = "walk"
 					action_point.position = Vector2(0.0, 57.0)
+					Global.game_1st_loading = false
 				else:
 					animations.animation = "walkUp"
 					action_point.position = Vector2(0.0, -57.0)
+					Global.game_1st_loading = false
 
 
 func _on_fishing_timeout() -> void:

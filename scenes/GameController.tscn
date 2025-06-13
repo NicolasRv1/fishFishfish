@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://ch742a8smscxl"]
 
 [ext_resource type="Script" uid="uid://du4pidn2nkpnl" path="res://fishFishfish/scripts/game_controller.gd" id="1_040qh"]
-[ext_resource type="PackedScene" uid="uid://b4e3j7wrple5g" path="res://fishFishfish/scenes/main.tscn" id="2_si3fu"]
+[ext_resource type="PackedScene" uid="uid://b4e3j7wrple5g" path="res://fishFishfish/scenes/island.tscn" id="2_si3fu"]
 [ext_resource type="PackedScene" uid="uid://c5qh6a7e1qgo4" path="res://fishFishfish/scenes/insideHut.tscn" id="3_si3fu"]
 
 [node name="GameController" type="Node"]
 script = ExtResource("1_040qh")
 
-[node name="main" parent="." instance=ExtResource("2_si3fu")]
-
 [node name="hut" parent="." instance=ExtResource("3_si3fu")]
+
+[node name="island_scene" parent="." instance=ExtResource("2_si3fu")]

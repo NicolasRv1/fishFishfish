@@ -22,8 +22,6 @@ var canFish = false
 
 func _physics_process(delta: float) -> void:
 	
-	if Global.current_scene != "island":
-		animations.animation = "idleUp"
 	
 	if Input.is_action_just_pressed("fish") and !locked and canFish:
 		match animations.animation:

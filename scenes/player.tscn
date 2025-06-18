@@ -555,6 +555,7 @@ shape = SubResource("CircleShape2D_3oxkk")
 
 [node name="fishing" type="Timer" parent="."]
 wait_time = 15.0
+one_shot = true
 
 [node name="action_point" type="Node2D" parent="."]
 position = Vector2(0, 57)

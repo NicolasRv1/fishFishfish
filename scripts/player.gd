@@ -6,8 +6,8 @@ const run_speed = 420.0
 var running = false
 var speed := 0.0
 
-var locked = false
 var fishing := false
+
 
 
 @onready 
@@ -20,19 +20,25 @@ var fish_time: Timer = $fishing
 var action_point: Node2D = $action_point
 var canFish = false
 
+@onready 
+var fishing_window: Control = $"../fishing_window"
+
+
+
+
 func _physics_process(delta: float) -> void:
 	
 	
-	if Input.is_action_just_pressed("fish") and !locked and canFish:
+	if Input.is_action_just_pressed("fish") and !Global.lock_player and canFish:
 		match animations.animation:
 			"walkUp", "runUp", "idleUp": animations.animation = "fishUp"
 			"walk", "run", "idle": animations.animation = "fish"
 			"walkRight", "runRight", "idleRight": animations.animation = "fishRight"
 
 		print ("fishing...")
-		fish_time.wait_time = randf_range(4.0, 10.0)
+		fish_time.wait_time = randf_range(1.0, 3.0)
 		fish_time.start()
-		locked = true
+		Global.lock_player = true
 		fishing = true
 
 	if Input.is_action_pressed("run"):
@@ -47,7 +53,7 @@ func _physics_process(delta: float) -> void:
 
 	var input_vector = Vector2.ZERO * delta
 	
-	if !locked:
+	if !Global.lock_player:
 		input_vector.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 		input_vector.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 
@@ -56,7 +62,7 @@ func _physics_process(delta: float) -> void:
 	
 	velocity = input_vector * speed
 	
-	if !locked:
+	if !Global.lock_player:
 		move_and_slide()
 	
 	update_animations(input_vector)
@@ -123,14 +129,12 @@ func update_animations(input_vector: Vector2) -> void:
 
 
 func _on_fishing_timeout() -> void:
-	locked = false
-	print("FISHED!")
 	fishing = false
 	
-	match animations.animation:
-		"fishUp" : animations.animation = "idleUp"
-		"fish" : animations.animation = "idle"
-		"fishRight" : animations.animation = "idleRight"
+	fishing_window.visible = true
+	
+
+
 
 
 
@@ -144,3 +148,10 @@ func _on_action_finder_body_entered(body: Node2D) -> void:
 
 func _on_action_finder_body_exited(body: Node2D) -> void:
 	canFish = false
+
+
+func _on_bullet_time_timeout() -> void:
+	match animations.animation:
+		"fishUp" : animations.animation = "idleUp"
+		"fish" : animations.animation = "idle"
+		"fishRight" : animations.animation = "idleRight"

@@ -5,10 +5,10 @@ var canEnter = false
 var player: Player = $"../player"
 
 
-func _on_action_point_entered(area: Area2D) -> void:
+func _on_action_point_entered(_area: Area2D) -> void:
 	canEnter = true
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("action") and canEnter:
 
 		if Global.current_scene == "island":
@@ -23,5 +23,5 @@ func _process(delta: float) -> void:
 
 
 
-func _on_area_exited(area: Area2D) -> void:
+func _on_area_exited(_area: Area2D) -> void:
 	canEnter = false

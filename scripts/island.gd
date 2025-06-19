@@ -15,7 +15,7 @@ func _ready() -> void:
 		$player.position.x = 179.0
 		$player.position.y = 332.0
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if fishing_window.visible == true:
 		if bullet_time.is_stopped() == true:
 			bullet_time.start()
@@ -34,7 +34,7 @@ func _process(delta: float) -> void:
 
 
 func _on_bullet_time_timeout() -> void:
-	if rarity <= 0.9:
+	if rarity <= 0.8:
 		print ("bass")
 	else:
 		print ("crazy fish")

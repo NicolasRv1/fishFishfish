@@ -20,9 +20,6 @@ var fish_time: Timer = $fishing
 var action_point: Node2D = $action_point
 var canFish = false
 
-@onready 
-var fishing_window: Control = $"../fishing_window"
-
 
 
 
@@ -129,6 +126,8 @@ func update_animations(input_vector: Vector2) -> void:
 
 
 func _on_fishing_timeout() -> void:
+	var fishing_window: Control = $"../fishing_window"
+	
 	fishing = false
 	
 	fishing_window.visible = true
@@ -142,11 +141,11 @@ func _on_fishing_timeout() -> void:
 
 
 
-func _on_action_finder_body_entered(body: Node2D) -> void:
+func _on_action_finder_body_entered(_body: Node2D) -> void:
 	canFish = true
 
 
-func _on_action_finder_body_exited(body: Node2D) -> void:
+func _on_action_finder_body_exited(_body: Node2D) -> void:
 	canFish = false
 
 

@@ -1,34 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq8qjkv2sq3u7"]
+[gd_scene load_steps=6 format=3 uid="uid://bmk8rbfbw6euk"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hlvu2"]
-bg_color = Color(0.949166, 0.347109, 0.613151, 1)
+[ext_resource type="Texture2D" uid="uid://sl3x6h5wofej" path="res://fishFishfish/assets/mycreations/battlescreen.png" id="1_6n1xp"]
+[ext_resource type="Script" uid="uid://dc1i7vm5vvc7n" path="res://fishFishfish/scripts/fishing_window.gd" id="1_gdn2p"]
+[ext_resource type="PackedScene" uid="uid://b4nfvqn0hpl1w" path="res://fishFishfish/scenes/fish_player.tscn" id="3_6n1xp"]
+[ext_resource type="PackedScene" uid="uid://ccx2nxwifmj8d" path="res://fishFishfish/scenes/deadzone.tscn" id="4_gdn2p"]
 
-[node name="fishing_window" type="Control"]
-visible = false
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gdn2p"]
+size = Vector2(397.75, 303.25)
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -600.0
-offset_top = -300.0
-offset_right = 600.0
-offset_bottom = 300.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="fishing_window" type="Node2D"]
+script = ExtResource("1_gdn2p")
 
-[node name="Panel" type="Panel" parent="PanelContainer"]
-z_index = 200
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_hlvu2")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(964, 537)
+scale = Vector2(3.00625, 3.00556)
+texture = ExtResource("1_6n1xp")
+
+[node name="bullet_time" type="Timer" parent="."]
+
+[node name="fish_player" parent="." instance=ExtResource("3_6n1xp")]
+position = Vector2(865, 559)
+
+[node name="deadzone" parent="." instance=ExtResource("4_gdn2p")]
+position = Vector2(915, 196)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="deadzone"]
+position = Vector2(15.125, -0.625)
+shape = SubResource("RectangleShape2D_gdn2p")
+
+[connection signal="timeout" from="bullet_time" to="." method="_on_bullet_time_timeout"]

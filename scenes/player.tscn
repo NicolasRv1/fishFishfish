@@ -544,17 +544,15 @@ script = ExtResource("1_appya")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_yh7i0")
-animation = &"fish"
+animation = &"fishUp"
 autoplay = "idle"
-frame = 1
-frame_progress = 0.564828
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 15)
 shape = SubResource("CircleShape2D_3oxkk")
 
 [node name="fishing" type="Timer" parent="."]
-wait_time = 15.0
+wait_time = 2.0
 one_shot = true
 
 [node name="action_point" type="Node2D" parent="."]

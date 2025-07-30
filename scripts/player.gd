@@ -33,7 +33,6 @@ func _physics_process(delta: float) -> void:
 			"walkRight", "runRight", "idleRight": animations.animation = "fishRight"
 
 		print ("fishing...")
-		fish_time.wait_time = randf_range(1.0, 3.0)
 		fish_time.start()
 		Global.lock_player = true
 		fishing = true
@@ -126,19 +125,10 @@ func update_animations(input_vector: Vector2) -> void:
 
 
 func _on_fishing_timeout() -> void:
-	var fishing_window: Control = $"../fishing_window"
-	
 	fishing = false
 	
-	fishing_window.visible = true
+	get_tree().change_scene_to_file("res://fishFishfish/scenes/fishing_window.tscn")
 	
-
-
-
-
-
-
-
 
 
 func _on_action_finder_body_entered(_body: Node2D) -> void:
@@ -147,10 +137,3 @@ func _on_action_finder_body_entered(_body: Node2D) -> void:
 
 func _on_action_finder_body_exited(_body: Node2D) -> void:
 	canFish = false
-
-
-func _on_bullet_time_timeout() -> void:
-	match animations.animation:
-		"fishUp" : animations.animation = "idleUp"
-		"fish" : animations.animation = "idle"
-		"fishRight" : animations.animation = "idleRight"

@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=4 uid="uid://c5qh6a7e1qgo4"]
+[gd_scene load_steps=11 format=4 uid="uid://c5qh6a7e1qgo4"]
 
 [ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/player.tscn" id="1_cvwma"]
 [ext_resource type="Script" uid="uid://bmf01h7jw4b7t" path="res://fishFishfish/scripts/hut.gd" id="1_rtkhk"]
 [ext_resource type="Texture2D" uid="uid://be83dm8gul8lm" path="res://fishFishfish/assets/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/interiors_demo.png" id="2_em5da"]
 [ext_resource type="PackedScene" uid="uid://0kekappix07w" path="res://fishFishfish/scenes/door.tscn" id="3_wk1x3"]
+[ext_resource type="PackedScene" uid="uid://8gf7uhytaiue" path="res://fishFishfish/scenes/ui_manager.tscn" id="5_1c35x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk1x3"]
 texture = ExtResource("2_em5da")
@@ -555,7 +556,7 @@ script = ExtResource("1_rtkhk")
 position = Vector2(410, 377)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.8, 0.8)
+zoom = Vector2(1.2, 1.2)
 
 [node name="tilemap" type="Node" parent="."]
 
@@ -583,3 +584,5 @@ position = Vector2(356, 437)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
 position = Vector2(48.5, -94.25)
 shape = SubResource("RectangleShape2D_rtkhk")
+
+[node name="UIManager" parent="." instance=ExtResource("5_1c35x")]

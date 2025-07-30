@@ -1,6 +1,7 @@
 extends Area2D
 
 var canEnter = false
+
 @onready 
 var player: Player = $"../player"
 

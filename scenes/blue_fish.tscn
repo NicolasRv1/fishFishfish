@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://velt2wwhsb3b"]
+
+[ext_resource type="Texture2D" uid="uid://dyqjsrtcc6mc5" path="res://fishFishfish/assets/mycreations/bluefish.png" id="2_dwa5u"]
+
+[node name="blue_fish" type="StaticBody2D"]
+collision_layer = 256
+collision_mask = 512
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(8, 8)
+texture = ExtResource("2_dwa5u")

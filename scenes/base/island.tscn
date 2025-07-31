@@ -1,15 +1,15 @@
 [gd_scene load_steps=18 format=4 uid="uid://b4e3j7wrple5g"]
 
-[ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/player.tscn" id="1_6slsl"]
-[ext_resource type="Script" uid="uid://b1udsw0oh3umq" path="res://fishFishfish/scripts/island.gd" id="1_oohup"]
-[ext_resource type="Texture2D" uid="uid://b2tc36a5kcwes" path="res://fishFishfish/assets/Pixel Lands Forest Demo/Pixel Lands Forest Demo/forest_demo_terrain.png" id="2_en7s5"]
-[ext_resource type="Texture2D" uid="uid://c2lv1lwfitwyo" path="res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/premade_buildings_demo.png" id="3_sxlff"]
-[ext_resource type="Texture2D" uid="uid://dao11f4hkh47t" path="res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/objects_demo.png" id="4_56p4f"]
-[ext_resource type="PackedScene" uid="uid://0kekappix07w" path="res://fishFishfish/scenes/door.tscn" id="5_sxlff"]
-[ext_resource type="PackedScene" uid="uid://8gf7uhytaiue" path="res://fishFishfish/scenes/ui_manager.tscn" id="8_86lab"]
+[ext_resource type="Script" uid="uid://b1udsw0oh3umq" path="res://fishFishfish/scripts/island.gd" id="1_g0p0i"]
+[ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/base/player.tscn" id="2_bw41s"]
+[ext_resource type="Texture2D" uid="uid://b2tc36a5kcwes" path="res://fishFishfish/assets/Pixel Lands Forest Demo/Pixel Lands Forest Demo/forest_demo_terrain.png" id="3_p8fln"]
+[ext_resource type="Texture2D" uid="uid://c2lv1lwfitwyo" path="res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/premade_buildings_demo.png" id="4_28t2q"]
+[ext_resource type="Texture2D" uid="uid://dao11f4hkh47t" path="res://fishFishfish/assets/Pixel Lands Village Demo/Pixel Lands Village Demo/objects_demo.png" id="5_8nfxx"]
+[ext_resource type="PackedScene" uid="uid://0kekappix07w" path="res://fishFishfish/scenes/base/door.tscn" id="6_8pwdv"]
+[ext_resource type="PackedScene" uid="uid://8gf7uhytaiue" path="res://fishFishfish/scenes/base/ui_manager.tscn" id="7_bs31c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nl8jj"]
-texture = ExtResource("2_en7s5")
+texture = ExtResource("3_p8fln")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -95,7 +95,7 @@ physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_nl8jj")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_67h6o"]
-texture = ExtResource("2_en7s5")
+texture = ExtResource("3_p8fln")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -163,7 +163,7 @@ texture = ExtResource("2_en7s5")
 sources/1 = SubResource("TileSetAtlasSource_67h6o")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_owon1"]
-texture = ExtResource("3_sxlff")
+texture = ExtResource("4_28t2q")
 10:1/0 = 0
 11:1/0 = 0
 12:1/0 = 0
@@ -325,7 +325,7 @@ texture = ExtResource("3_sxlff")
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48.1132, -21.0296, -6.16869, -61.3014, 0.771088, -61.6869, 7.71087, -60.5303, 48.1132, -21.3483, 48.7163, 63.9895, -48.1605, 64.214)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k3tar"]
-texture = ExtResource("4_56p4f")
+texture = ExtResource("5_8nfxx")
 0:0/0 = 0
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.51802, -8, 8, -8, 8, 8, 2.87774, 8)
@@ -489,7 +489,7 @@ sources/10 = SubResource("TileSetAtlasSource_owon1")
 sources/12 = SubResource("TileSetAtlasSource_k3tar")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_en7s5"]
-texture = ExtResource("4_56p4f")
+texture = ExtResource("5_8nfxx")
 0:0/0 = 0
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(1.79859, -8, 8, -8, 8, 8, 1.82746, 8)
@@ -612,13 +612,13 @@ sources/0 = SubResource("TileSetAtlasSource_en7s5")
 size = Vector2(61, 116)
 
 [node name="island_scene" type="Node2D"]
-script = ExtResource("1_oohup")
+script = ExtResource("1_g0p0i")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(482, 205)
 zoom = Vector2(1.15, 1.15)
 
-[node name="player" parent="." groups=["player"] instance=ExtResource("1_6slsl")]
+[node name="player" parent="." groups=["player"] instance=ExtResource("2_bw41s")]
 position = Vector2(480, 189)
 
 [node name="tilemap" type="Node" parent="."]
@@ -656,13 +656,13 @@ scale = Vector2(3.2, 3.2)
 tile_map_data = PackedByteArray("AAAQAAAAAAAIAAAABgAQAAEAAAAIAAEABwARAAAAAAAJAAAAAwARAAEAAAAJAAEAAwA=")
 tile_set = SubResource("TileSet_sxlff")
 
-[node name="door" parent="." instance=ExtResource("5_sxlff")]
+[node name="door" parent="." instance=ExtResource("6_8pwdv")]
 position = Vector2(176, 305)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
 position = Vector2(-0.5, 3)
 shape = SubResource("RectangleShape2D_56p4f")
 
-[node name="UIManager" parent="." instance=ExtResource("8_86lab")]
+[node name="UIManager" parent="." instance=ExtResource("7_bs31c")]
 
 [connection signal="area_exited" from="door" to="door" method="_on_area_exited"]

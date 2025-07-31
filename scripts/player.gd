@@ -127,7 +127,7 @@ func update_animations(input_vector: Vector2) -> void:
 func _on_fishing_timeout() -> void:
 	fishing = false
 	
-	get_tree().change_scene_to_file("res://fishFishfish/scenes/fishing_window.tscn")
+	get_tree().change_scene_to_file("res://fishFishfish/scenes/base/fishing_window.tscn")
 	
 
 

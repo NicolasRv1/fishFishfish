@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=4 uid="uid://c5qh6a7e1qgo4"]
 
-[ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/player.tscn" id="1_cvwma"]
-[ext_resource type="Script" uid="uid://bmf01h7jw4b7t" path="res://fishFishfish/scripts/hut.gd" id="1_rtkhk"]
-[ext_resource type="Texture2D" uid="uid://be83dm8gul8lm" path="res://fishFishfish/assets/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/interiors_demo.png" id="2_em5da"]
-[ext_resource type="PackedScene" uid="uid://0kekappix07w" path="res://fishFishfish/scenes/door.tscn" id="3_wk1x3"]
-[ext_resource type="PackedScene" uid="uid://8gf7uhytaiue" path="res://fishFishfish/scenes/ui_manager.tscn" id="5_1c35x"]
+[ext_resource type="Script" uid="uid://bmf01h7jw4b7t" path="res://fishFishfish/scripts/hut.gd" id="1_k35da"]
+[ext_resource type="PackedScene" uid="uid://6hkj1cpvlm5l" path="res://fishFishfish/scenes/base/player.tscn" id="2_jrfp1"]
+[ext_resource type="Texture2D" uid="uid://be83dm8gul8lm" path="res://fishFishfish/assets/Pixel Lands Interiors Demo/Pixel Lands Interiors Demo/interiors_demo.png" id="3_alyd7"]
+[ext_resource type="PackedScene" uid="uid://0kekappix07w" path="res://fishFishfish/scenes/base/door.tscn" id="4_t882b"]
+[ext_resource type="PackedScene" uid="uid://8gf7uhytaiue" path="res://fishFishfish/scenes/base/ui_manager.tscn" id="5_0sfjd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk1x3"]
-texture = ExtResource("2_em5da")
+texture = ExtResource("3_alyd7")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -263,7 +263,7 @@ physics_layer_0/collision_mask = 12
 sources/0 = SubResource("TileSetAtlasSource_wk1x3")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_em5da"]
-texture = ExtResource("2_em5da")
+texture = ExtResource("3_alyd7")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -550,9 +550,9 @@ sources/0 = SubResource("TileSetAtlasSource_em5da")
 size = Vector2(341, 263.5)
 
 [node name="hut" type="Node2D"]
-script = ExtResource("1_rtkhk")
+script = ExtResource("1_k35da")
 
-[node name="player" parent="." instance=ExtResource("1_cvwma")]
+[node name="player" parent="." instance=ExtResource("2_jrfp1")]
 position = Vector2(410, 377)
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -578,11 +578,11 @@ scale = Vector2(3.2, 3.2)
 tile_map_data = PackedByteArray("AADw//f/AAADAAAAAADw//j/AAADAAEAAADw//n/AAADAAIAAADx//f/AAAEAAAAAADx//j/AAAEAAEAAADx//n/AAAOAAYAAADy//f/AAAFAAAAAADy//j/AAAFAAEAAADy//n/AAAFAAIAAADz//f/AAADAAAAAADz//j/AAADAAEAAADz//n/AAADAAIAAAD0//f/AAAEAAAAAAD0//j/AAAEAAEAAAD0//n/AAAEAAIAAAD1//f/AAAFAAAAAAD1//j/AAAKAAgAAAD1//n/AAAKAAkAAAD2//f/AAADAAAAAAD2//j/AAALAAgAAAD2//n/AAALAAkAAAD3//f/AAAEAAAAAAD3//j/AAAKAAgAAAD3//n/AAAKAAkAAAD4//f/AAAFAAAAAAD4//j/AAALAAgAAAD4//n/AAALAAkAAAD5//f/AAADAAAAAAD5//j/AAAKAAgAAAD5//n/AAAKAAkAAAD6//f/AAAEAAAAAAD6//j/AAALAAgAAAD6//n/AAALAAkAAAD7//f/AAAFAAAAAAD7//j/AAAKAAgAAAD7//n/AAAKAAkAAAD8//f/AAADAAAAAAD8//j/AAALAAgAAAD8//n/AAALAAkAAAD9//f/AAAEAAAAAAD9//n/AAAEAAIAAAD+//f/AAAFAAAAAAD+//n/AAAFAAIAAAD///f/AAADAAAAAAD///n/AAADAAIAAAAAAPf/AAAEAAAAAAAAAPj/AAAEAAEAAAAAAPn/AAAEAAIAAAABAPf/AAAFAAAAAAABAPn/AAAIAAAAAAACAPf/AAADAAAAAAACAPj/AAADAAEAAAACAPn/AAAJAAAAAAADAPf/AAAEAAAAAAADAPj/AAAEAAEAAAADAPn/AAAIAAAAAAAEAPf/AAAFAAAAAAAEAPj/AAAFAAEAAAAEAPn/AAAJAAAAAAAFAPf/AAADAAAAAAAFAPj/AAADAAEAAAAFAPn/AAADAAIAAAAGAPf/AAAEAAAAAAAGAPj/AAAPAAoAAAAGAPn/AAAEAAIAAAAHAPf/AAAFAAAAAAAHAPj/AAAFAAEAAAAHAPn/AAAFAAIAAAAIAPf/AAADAAAAAAAIAPj/AAADAAEAAAAIAPn/AAADAAIAAAAJAPf/AAAEAAAAAAAJAPj/AAAEAAEAAAAJAPn/AAAPAAgAAAAKAPf/AAAGAAAAAAAKAPj/AAAGAAEAAAAKAPn/AAALAAIAAAALAPf/AAAHAAAAAAALAPj/AAAHAAEAAAALAPn/AAAMAAIAAAAMAPf/AAAEAAAAAAAMAPj/AAAEAAEAAAAMAPn/AAANAAIAAAANAPf/AAAFAAAAAAANAPj/AAAFAAEAAAANAPn/AAAKAAIAAAAOAPf/AAADAAAAAAAOAPj/AAADAAEAAAAOAPn/AAADAAIAAAAPAPf/AAAEAAAAAAAPAPn/AAAEAAIAAAAQAPf/AAAFAAAAAAAQAPj/AAAFAAEAAAAQAPn/AAAFAAIAAADx//r/AAAOAAcAAAAKAPr/AAALAAMAAAAKAPv/AAALAAQAAAAKAPz/AAALAAUAAAALAPr/AAAMAAMAAAALAPv/AAAMAAQAAAALAPz/AAAMAAUAAAAMAPr/AAANAAMAAAAMAPv/AAANAAQAAAAMAPz/AAANAAUAAAAJAPr/AAAJAAMAAAANAPr/AAAKAAMAAAD1//r/AAAKAAoAAAD2//r/AAALAAoAAAD3//r/AAAKAAoAAAD4//r/AAALAAoAAAD5//r/AAAKAAoAAAD6//r/AAALAAoAAAD7//r/AAAKAAoAAAD8//r/AAALAAoAAAABAPr/AAAIAAEAAAACAPr/AAAJAAEAAAADAPr/AAAIAAEAAAAEAPr/AAAJAAEAAADx//7/AAADAAgAAADx////AAADAAkAAADx/wAAAAADAAoAAADy//7/AAAEAAgAAADy////AAAEAAkAAADy/wAAAAAEAAoAAAAMAAEAAAAPAAYAAAALAAEAAAAPAAcAAAD9//j/AAAPAAkAAAD///7/AAAJAAYAAAACAP7/AAAPAAgAAAD/////AAAJAAcAAAAFAP7/AAALAAYAAAAFAP//AAALAAcAAADw//r/AAACAAYAAADw//v/AAACAAYAAADw//z/AAACAAYAAADw//3/AAACAAYAAADw//7/AAACAAYAAADw////AAACAAYAAADw/wAAAAACAAYAAADw/wEAAAACAAYAAADw/wIAAAACAAYAAADw/wMAAAACAAYAAADw/wQAAAACAAYAAADw/wUAAAACAAYAAADw/wYAAAACAAYAAADw/wcAAAACAAYAAADw/wgAAAACAAYAAAAPAPr/AAAAAAYAAAAPAPv/AAAAAAYAAAAPAPz/AAAAAAYAAAAPAP3/AAAAAAYAAAAPAP7/AAAAAAYAAAAPAP//AAAAAAYAAAAPAAAAAAAAAAYAAAAPAAEAAAAAAAYAAAAPAAIAAAAAAAYAAAAPAAMAAAAAAAYAAAAPAAQAAAAAAAYAAAAPAAUAAAAAAAYAAAAPAAYAAAAAAAYAAAAPAAcAAAAAAAYAAAAPAAgAAAAAAAYAAAA=")
 tile_set = SubResource("TileSet_wk1x3")
 
-[node name="door" parent="." instance=ExtResource("3_wk1x3")]
+[node name="door" parent="." instance=ExtResource("4_t882b")]
 position = Vector2(356, 437)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door"]
 position = Vector2(48.5, -94.25)
 shape = SubResource("RectangleShape2D_rtkhk")
 
-[node name="UIManager" parent="." instance=ExtResource("5_1c35x")]
+[node name="UIManager" parent="." instance=ExtResource("5_0sfjd")]

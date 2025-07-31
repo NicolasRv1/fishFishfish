@@ -6,6 +6,9 @@ var fish_sense := 0.0
 
 
 func _ready() -> void:
+	Global.player = self
+	
+	
 	Input.mouse_mode = Input.MOUSE_MODE_CONFINED_HIDDEN
 	Input.warp_mouse(Vector2(957.0, .0))
 

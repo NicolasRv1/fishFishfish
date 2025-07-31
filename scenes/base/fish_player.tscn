@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_317ln"]
 size = Vector2(46, 15)
 
-[node name="fish_player" type="CharacterBody2D"]
+[node name="fish_player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 512
 collision_mask = 256
 motion_mode = 1

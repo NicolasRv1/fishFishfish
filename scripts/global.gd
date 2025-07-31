@@ -7,6 +7,7 @@ var current_scene = "island"
 var game_1st_loading = true
 var lock_player = false
 var isDead = false
+var player : Node2D = null
 
 func gain_coins(coins_gained: int):
 	fish_coin += coins_gained
